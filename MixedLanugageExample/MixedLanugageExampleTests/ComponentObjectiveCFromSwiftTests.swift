@@ -1,5 +1,5 @@
 //
-//  ComponentSwiftTests.swift
+//  ComponentObjectiveCFromSwiftTests.swift
 //  MixedLanugageExample
 //
 //  Created by Gergely Orosz on 18/07/2015.
@@ -8,9 +8,10 @@
 
 import XCTest
 
-class ComponentSwiftTests: XCTestCase {
+class ComponentObjectiveCFromSwiftTests: XCTestCase {
     
     override func setUp() {
+        super.setUp()
     }
     
     override func tearDown() {
@@ -19,7 +20,7 @@ class ComponentSwiftTests: XCTestCase {
     
     func test_sayHello_whenInvokedWithEmptyString_returnsHelloWorld() {
         // given
-        let component = ComponentSwift()
+        let component = ComponentObjectiveC()
         
         // then
         XCTAssertEqual(component.sayHello(""), "Hello World!")
@@ -27,7 +28,7 @@ class ComponentSwiftTests: XCTestCase {
     
     func test_sayHello_whenInvokedWithNonEmptyString_substitutesName() {
         // given
-        let component = ComponentSwift()
+        let component = ComponentObjectiveC()
         
         // then
         XCTAssertEqual(component.sayHello("Greg"), "Hello Greg!")

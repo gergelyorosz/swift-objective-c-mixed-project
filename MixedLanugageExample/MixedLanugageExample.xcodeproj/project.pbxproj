@@ -12,6 +12,8 @@
 		F54CFB901B5AC1C80017AC26 /* ComponentSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB8B1B5ABFC90017AC26 /* ComponentSwift.swift */; };
 		F54CFB921B5ACDE30017AC26 /* LabelSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB911B5ACDE30017AC26 /* LabelSwift.swift */; };
 		F54CFB951B5ADF290017AC26 /* LabelObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB941B5ADF290017AC26 /* LabelObjectiveC.m */; };
+		F54CFB971B5AE7C50017AC26 /* ComponentSwiftFromObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB961B5AE7C50017AC26 /* ComponentSwiftFromObjectiveCTests.m */; };
+		F54CFB991B5AEF840017AC26 /* ComponentObjectiveCFromSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB981B5AEF840017AC26 /* ComponentObjectiveCFromSwiftTests.swift */; };
 		F58537841B5ABA4800DB2AD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537831B5ABA4800DB2AD2 /* main.m */; };
 		F58537871B5ABA4800DB2AD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537861B5ABA4800DB2AD2 /* AppDelegate.m */; };
 		F585378A1B5ABA4800DB2AD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537891B5ABA4800DB2AD2 /* ViewController.m */; };
@@ -49,6 +51,8 @@
 		F54CFB911B5ACDE30017AC26 /* LabelSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSwift.swift; sourceTree = "<group>"; };
 		F54CFB931B5ADF290017AC26 /* LabelObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelObjectiveC.h; sourceTree = "<group>"; };
 		F54CFB941B5ADF290017AC26 /* LabelObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelObjectiveC.m; sourceTree = "<group>"; };
+		F54CFB961B5AE7C50017AC26 /* ComponentSwiftFromObjectiveCTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComponentSwiftFromObjectiveCTests.m; sourceTree = "<group>"; };
+		F54CFB981B5AEF840017AC26 /* ComponentObjectiveCFromSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentObjectiveCFromSwiftTests.swift; sourceTree = "<group>"; };
 		F585377F1B5ABA4800DB2AD2 /* MixedLanugageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedLanugageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58537831B5ABA4800DB2AD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F58537851B5ABA4800DB2AD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -152,7 +156,9 @@
 				F585379C1B5ABA4800DB2AD2 /* MixedLanugageExampleTests.m */,
 				F585379E1B5ABA4800DB2AD2 /* Info.plist */,
 				F58537B81B5ABBAD00DB2AD2 /* ComponentObjectiveCTests.m */,
+				F54CFB981B5AEF840017AC26 /* ComponentObjectiveCFromSwiftTests.swift */,
 				F54CFB8E1B5AC0DE0017AC26 /* ComponentSwiftTests.swift */,
+				F54CFB961B5AE7C50017AC26 /* ComponentSwiftFromObjectiveCTests.m */,
 				F54CFB8D1B5AC0DD0017AC26 /* MixedLanugageExampleTests-Bridging-Header.h */,
 			);
 			path = MixedLanugageExampleTests;
@@ -312,6 +318,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54CFB971B5AE7C50017AC26 /* ComponentSwiftFromObjectiveCTests.m in Sources */,
+				F54CFB991B5AEF840017AC26 /* ComponentObjectiveCFromSwiftTests.swift in Sources */,
 				F585379D1B5ABA4800DB2AD2 /* MixedLanugageExampleTests.m in Sources */,
 				F54CFB8F1B5AC0DE0017AC26 /* ComponentSwiftTests.swift in Sources */,
 				F58537B91B5ABBAD00DB2AD2 /* ComponentObjectiveCTests.m in Sources */,
@@ -476,6 +484,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MixedLanugageExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelyorosz.MixedLanugageExampleTests;
@@ -491,6 +500,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MixedLanugageExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelyorosz.MixedLanugageExampleTests;
