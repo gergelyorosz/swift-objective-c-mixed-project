@@ -10,6 +10,8 @@
 		F54CFB8C1B5ABFC90017AC26 /* ComponentSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB8B1B5ABFC90017AC26 /* ComponentSwift.swift */; };
 		F54CFB8F1B5AC0DE0017AC26 /* ComponentSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB8E1B5AC0DE0017AC26 /* ComponentSwiftTests.swift */; };
 		F54CFB901B5AC1C80017AC26 /* ComponentSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB8B1B5ABFC90017AC26 /* ComponentSwift.swift */; };
+		F54CFB921B5ACDE30017AC26 /* LabelSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB911B5ACDE30017AC26 /* LabelSwift.swift */; };
+		F54CFB951B5ADF290017AC26 /* LabelObjectiveC.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFB941B5ADF290017AC26 /* LabelObjectiveC.m */; };
 		F58537841B5ABA4800DB2AD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537831B5ABA4800DB2AD2 /* main.m */; };
 		F58537871B5ABA4800DB2AD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537861B5ABA4800DB2AD2 /* AppDelegate.m */; };
 		F585378A1B5ABA4800DB2AD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58537891B5ABA4800DB2AD2 /* ViewController.m */; };
@@ -44,6 +46,9 @@
 		F54CFB8B1B5ABFC90017AC26 /* ComponentSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentSwift.swift; sourceTree = "<group>"; };
 		F54CFB8D1B5AC0DD0017AC26 /* MixedLanugageExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixedLanugageExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		F54CFB8E1B5AC0DE0017AC26 /* ComponentSwiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentSwiftTests.swift; sourceTree = "<group>"; };
+		F54CFB911B5ACDE30017AC26 /* LabelSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSwift.swift; sourceTree = "<group>"; };
+		F54CFB931B5ADF290017AC26 /* LabelObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelObjectiveC.h; sourceTree = "<group>"; };
+		F54CFB941B5ADF290017AC26 /* LabelObjectiveC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelObjectiveC.m; sourceTree = "<group>"; };
 		F585377F1B5ABA4800DB2AD2 /* MixedLanugageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedLanugageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58537831B5ABA4800DB2AD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F58537851B5ABA4800DB2AD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,14 +123,17 @@
 				F58537B51B5ABB7100DB2AD2 /* ComponentObjectiveC.h */,
 				F58537B61B5ABB7100DB2AD2 /* ComponentObjectiveC.m */,
 				F54CFB8B1B5ABFC90017AC26 /* ComponentSwift.swift */,
+				F58537931B5ABA4800DB2AD2 /* Info.plist */,
+				F585378B1B5ABA4800DB2AD2 /* Main.storyboard */,
+				F58537901B5ABA4800DB2AD2 /* LaunchScreen.storyboard */,
+				F54CFB931B5ADF290017AC26 /* LabelObjectiveC.h */,
+				F54CFB941B5ADF290017AC26 /* LabelObjectiveC.m */,
+				F54CFB911B5ACDE30017AC26 /* LabelSwift.swift */,
+				F54CFB8A1B5ABFC80017AC26 /* MixedLanugageExample-Bridging-Header.h */,
 				F58537881B5ABA4800DB2AD2 /* ViewController.h */,
 				F58537891B5ABA4800DB2AD2 /* ViewController.m */,
-				F585378B1B5ABA4800DB2AD2 /* Main.storyboard */,
 				F585378E1B5ABA4800DB2AD2 /* Assets.xcassets */,
-				F58537901B5ABA4800DB2AD2 /* LaunchScreen.storyboard */,
-				F58537931B5ABA4800DB2AD2 /* Info.plist */,
 				F58537821B5ABA4800DB2AD2 /* Supporting Files */,
-				F54CFB8A1B5ABFC80017AC26 /* MixedLanugageExample-Bridging-Header.h */,
 			);
 			path = MixedLanugageExample;
 			sourceTree = "<group>";
@@ -292,8 +300,10 @@
 			files = (
 				F585378A1B5ABA4800DB2AD2 /* ViewController.m in Sources */,
 				F58537B71B5ABB7100DB2AD2 /* ComponentObjectiveC.m in Sources */,
+				F54CFB951B5ADF290017AC26 /* LabelObjectiveC.m in Sources */,
 				F58537871B5ABA4800DB2AD2 /* AppDelegate.m in Sources */,
 				F58537841B5ABA4800DB2AD2 /* main.m in Sources */,
+				F54CFB921B5ACDE30017AC26 /* LabelSwift.swift in Sources */,
 				F54CFB8C1B5ABFC90017AC26 /* ComponentSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MixedLanugageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelyorosz.MixedLanugageExample;
@@ -451,6 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = MixedLanugageExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gergelyorosz.MixedLanugageExample;

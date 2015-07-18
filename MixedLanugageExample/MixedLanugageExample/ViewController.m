@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "MixedLanugageExample-Swift.h"
+#import "LabelObjectiveC.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong, readonly) LabelObjectiveC* labelObjectiveC;
+@property (nonatomic, strong, readonly) LabelSwift* labelSwift;
 
 @end
 
@@ -16,12 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _labelObjectiveC = [[LabelObjectiveC alloc] initWithFrame:CGRectMake(20, 60, 150, 20)];
+    _labelSwift = [[LabelSwift alloc] initWithFrame:CGRectMake(20, 100, 150, 20)];
+    
+    [self.view addSubview:self.labelObjectiveC];
+    [self.view addSubview:self.labelSwift];
 }
 
 @end
