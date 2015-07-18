@@ -17,7 +17,7 @@ This sample intends to make it easy to get started and serve as a guide on using
 
 - Add the Objective C header file to the [Bridging header](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html)
 - E.g. in the `MixedLanguageExample` project e.g. to use the `ComponentObjectiveC` class from any Swift file in the project
-  - In* MixedLanguageExample/MixedLanugageExample-Bridging-Header.h* add
+  - In *MixedLanguageExample/MixedLanugageExample-Bridging-Header.h* add
   ```
   #import "ComponentObjectiveC.h"
   ```
@@ -29,9 +29,9 @@ This sample intends to make it easy to get started and serve as a guide on using
 - E.g. to test the `ComponentObjectiveC` Objective C class from *ComponentObjectiveCFromSwiftTests.swift*:
   - In the unit test file *MixedLanugageExampleTests / MixedLanugageExampleTests-Bridging-Header.h*
   - import the Objective C header file
-```
-#import "ComponentObjectiveC.h"
-```
+  ```
+  #import "ComponentObjectiveC.h"
+  ```
 
 ### Invoking Swift code from Objective C
 
