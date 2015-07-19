@@ -1,5 +1,5 @@
 # Swift 2.0 and  Objective C in a Mixed Project
-Example code on how to use Objective C and Swift components together in a project
+Example code on how to use Objective C and Swift components together in a project. Use cases:
 - **Invoking Objective C classes from Swift**
   - In the same project
   - Unit testing Objective C classes from Swift
@@ -10,7 +10,7 @@ Example code on how to use Objective C and Swift components together in a projec
 ### Why
 Since the announcement of Swift it has been possible to use Objective C and Swift code together in the same project. However even with XCode 7, using the two languages together is not very straightforward and the [Apple documentation](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html) doesn't provide a working example to demonstrate this usage.
 
-This sample intends to make it easy to get started and serve as a guide on using Swift and Objective C together in applications for XCode 7.0 upwards.
+This sample makes it easy to get started. It also serves as a guide on using Swift 2.0 and Objective C together in applications for XCode 7.0 upwards.
 
 ### Invoking Objective C code from Swift
 
