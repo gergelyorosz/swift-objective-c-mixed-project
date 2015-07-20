@@ -52,7 +52,7 @@ This sample makes it easy to get started. It also serves as a guide on using Swi
   #import "MixedLanugageExampleTests-Swift.h"
   ```
 
-#### FAQ
+### FAQ
 - **Q**: What about working with Swift 1.0 using XCode 6.xx?
 
   **A**: The steps are exactly the same. I created the sample using XCode 7.0 beta as it has better Swift support (even if the beta is unstable)
