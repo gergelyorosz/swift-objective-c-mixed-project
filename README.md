@@ -51,3 +51,12 @@ This sample makes it easy to get started. It also serves as a guide on using Swi
   ```
   #import "MixedLanugageExampleTests-Swift.h"
   ```
+
+#### FAQ
+- **Q**: What about working with Swift 1.0 using XCode 6.xx?
+
+  **A**: The steps are exactly the same. I created the sample using XCode 7.0 beta as it has better Swift support (even if the beta is unstable)
+  
+- **Q**: When testing Objective C classes using Swift, do I need to re-import the Objective C header files in the bridging header, in my test project? I've already done this in my production project. 
+
+  **A**: Seems like this is the only way to do it. Think of the bridging header as the new prefix header for Swift to work with Objective C.
