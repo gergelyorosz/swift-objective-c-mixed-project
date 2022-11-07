@@ -8,10 +8,12 @@
 
 import UIKit
 
+@objc
 public class ComponentSwift: NSObject {
-
+    
+    @objc
     func sayHello(name: String) -> String {
-        let nameForGreeting = name.characters.count == 0 ? "World" : name;
+        let nameForGreeting = name.count == 0 ? "World" : name;
         let greeting = "Hello " + nameForGreeting + "!";
         return greeting;
     }
