@@ -15,7 +15,7 @@
     self = [super initWithFrame:frame];
     if(self) {
         ComponentSwift* component = [ComponentSwift new];
-        self.text = [component sayHello:@"Swift"];
+        self.text = [component sayHelloWithName:@"Swift"];
     }
     return self;
 }

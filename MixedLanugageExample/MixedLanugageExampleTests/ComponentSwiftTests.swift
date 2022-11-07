@@ -22,7 +22,7 @@ class ComponentSwiftTests: XCTestCase {
         let component = ComponentSwift()
         
         // then
-        XCTAssertEqual(component.sayHello(""), "Hello World!")
+        XCTAssertEqual(component.sayHello(name: ""), "Hello World!")
     }
     
     func test_sayHello_whenInvokedWithNonEmptyString_substitutesName() {
@@ -30,7 +30,7 @@ class ComponentSwiftTests: XCTestCase {
         let component = ComponentSwift()
         
         // then
-        XCTAssertEqual(component.sayHello("Greg"), "Hello Greg!")
+        XCTAssertEqual(component.sayHello(name: "Greg"), "Hello Greg!")
     }
     
 }

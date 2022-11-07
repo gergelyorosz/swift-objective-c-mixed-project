@@ -28,7 +28,7 @@
     ComponentSwift* component = [ComponentSwift new];
     
     // then
-    XCTAssertEqualObjects([component sayHello:@""], @"Hello World!");
+    XCTAssertEqualObjects([component sayHelloWithName:@""], @"Hello World!");
 }
 
 - (void)test_sayHello_whenInvokedWithNonEmptyString_substitutesName {
@@ -36,7 +36,7 @@
     ComponentSwift* component = [ComponentSwift new];
     
     // then
-    XCTAssertEqualObjects([component sayHello:@"Tom"], @"Hello Tom!");
+    XCTAssertEqualObjects([component sayHelloWithName:@"Tom"], @"Hello Tom!");
 }
 
 @end
